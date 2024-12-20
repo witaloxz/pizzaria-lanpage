@@ -1,0 +1,325 @@
+:root {
+    --white: #FEF9EE;
+    --black: #000;
+    --yellow: #DB992C;
+    --red: #861B15;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: var(--white);
+}
+
+header i {
+    color: var(--red);
+    font-size: 2em;
+}
+
+.nav_bar ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav_bar ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav_bar ul li::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 100%;
+    background-color: var(--red);
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav_bar ul li:hover::after {
+    transform: scaleX(1);
+    visibility: visible;
+}
+
+.nav_bar ul li a {
+    color: var(--black);
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.button_pedido {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background-color: var(--red);
+    color: var(--white);
+    cursor: pointer;
+    filter: drop-shadow(5px 2px 5px black);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mobile_menu ul li a {
+    color: var(--red);
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+}
+
+.mobile_btn {
+    display: none;
+}
+
+.mobile_menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.mobile_menu.open {
+    right: 0;
+}
+
+.mobile_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mobile_menu ul li {
+    margin: 10px 0;
+}
+
+
+
+@media screen and (max-width: 746px) {
+    .nav_bar,
+    .button_pedido {
+        display: none;
+    }
+
+    body.menu-open {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+    }
+
+    .button_pedido_mobile {
+        width: 200px;
+        height: 60px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        background-color: var(--red);
+        color: var(--white);
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.5em;
+        filter: drop-shadow(5px 2px 5px black);
+        display: block;
+        margin: 20px auto;
+    }
+
+    .mobile_btn {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .mobile_btn i {
+        color: var(--red);
+        font-size: 2em;
+        transition: all 0.3s;
+    }
+
+    .mobile_menu.open+.mobile_btn i.fa-bars {
+        display: none;
+    }
+
+    .mobile_menu.open+.mobile_btn i.fa-x {
+        display: block;
+    }
+
+    .mobile_menu.open {
+        right: 0;
+    }
+
+    .mobile_list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .mobile_list li {
+        -webkit-tap-highlight-color: transparent;
+        margin: 15px 0;
+        transition: all 0.3s;
+    }
+
+    .mobile_list li:hover {
+        transform: translateY(-5px);
+    }
+
+    .mobile_list li a {
+        text-decoration: none;
+        color: var(--white);
+        font-size: 3em;
+        text-transform: uppercase;
+    }
+
+    .btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        z-index: 10000;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn i {
+        color: #fffefe98;
+        font-size: 2em;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    .nav_bar,
+    .button_pedido {
+        display: none;
+    }
+
+    body.menu-open {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+    }
+
+    header i {
+        font-size: 4rem;
+        cursor: pointer;
+    }
+
+    .button_pedido_mobile {
+        width: 200px;
+        height: 60px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        background-color: var(--red);
+        color: var(--white);
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.5em;
+        filter: drop-shadow(5px 2px 5px black);
+        display: block;
+        margin: 20px auto;
+    }
+
+    .mobile_btn {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .mobile_btn i {
+        color: var(--red);
+        font-size: 4em;
+        transition: all 0.3s;
+    }
+
+    .mobile_menu.open+.mobile_btn i.fa-bars {
+        display: none;
+    }
+
+    .mobile_menu.open+.mobile_btn i.fa-x {
+        display: block;
+    }
+
+    .mobile_menu.open {
+        right: 0;
+    }
+
+    .mobile_list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .mobile_list li {
+        -webkit-tap-highlight-color: transparent;
+        margin: 15px 0;
+        transition: all 0.3s;
+    }
+
+    .mobile_list li:hover {
+        transform: translateY(-5px);
+    }
+
+    .mobile_list li a {
+        text-decoration: none;
+        color: var(--white);
+        font-size: 3em;
+        text-transform: uppercase;
+    }
+
+    .btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        z-index: 10000;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn i {
+        color: #fffefe98;
+        font-size: 2em;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .container_2 {
+        margin-top: -700px;
+    }
+}

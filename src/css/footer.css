@@ -1,0 +1,133 @@
+:root {
+    --white: #FEF9EE;
+    --black: #000;
+    --yellow: #DB992C;
+    --red: #861B15;
+} 
+
+footer {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Estilo do wave */
+.footer-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.footer-wave img {
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 14px;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-socialmedias {
+    position: relative;
+    z-index: 2;
+    margin-top: 341px;
+    margin-right: 0px;
+}
+
+.container-contatos {
+    margin-left: 200px;
+}
+
+.container-contatos, .funcionamento {
+    position: relative;
+    z-index: 2;
+    margin-top: 266px;
+    padding: 0px;
+}
+
+.funcionamento {
+    margin-left: 61px;
+}
+
+.container-socialmedias h2, .container-contatos h2, .funcionamento h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.container-socialmedias i {
+    font-size: 1.5em;
+    color: var(--white);
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.container-socialmedias i:hover {
+    color: var(--black);
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.opening-hours p {
+    margin: 5px 0;
+}
+
+ /* versão mobile */
+
+@media screen and (max-width: 746px) {
+    .footer-wave, .footer-content img {
+      display: none;
+    }
+    .h2, .container-contatos , .funcionamento  {
+      display: none;
+    }
+  
+    .container-socialmedias  {
+      overflow: hidden;
+      color: var(--red);
+      margin-top: 20px;
+    }
+    .container-socialmedias i {
+      color: var(--black) ; 
+    }
+  }
+  
+  /* versão tablet */
+  
+  @media (min-width: 600px) and (max-width: 1024px) {
+      .footer-wave, .footer-content img {
+          display: none;
+        }
+        .h2, .container-contatos , .funcionamento  {
+          display: none;
+        }
+      
+        .container-socialmedias  {
+          overflow: hidden;
+          color: var(--red);
+          margin-top: 20px;
+        }
+        .container-socialmedias h2 {
+          font-size: 2em;
+        }
+        .container-socialmedias i {
+          color: black ;
+          font-size: 2em;
+        }
+  
+        .container_avaliacoes img{
+          pointer-events: none;
+        }
+      
+  }
