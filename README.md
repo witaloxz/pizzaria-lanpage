@@ -24,16 +24,9 @@ Este é um site fictício de uma pizzaria desenvolvido com HTML, CSS e JavaScrip
 - **#FEF9EE**: Branco suave, usado como cor de fundo principal da página.
 - **#000000**: Preto, utilizado para textos e ícones.
 - **#DB992C**: Amarelo, usado para destacar ícones e elementos como o botão de pedido.
-- **#62563F**: Tom de marrom escuro, utilizado em detalhes de texto e elementos de navegação.
 - **#861B15**: Vermelho, a cor principal da marca da pizzaria, usada no logotipo, botão de pedido e destaque de textos.
 
 Essas cores foram escolhidas para proporcionar uma aparência acolhedora e profissional, combinando elementos modernos e tradicionais de pizzarias.
-
-## Como Executar Localmente
-
-1. Navegue até a pasta do projeto.
-2. Abra o arquivo `index.html` no seu navegador.  
-   (Você pode usar extensões como "Live Server" no VS Code para testar a página localmente de forma mais dinâmica.)
 
 ## Aprendizados
 
