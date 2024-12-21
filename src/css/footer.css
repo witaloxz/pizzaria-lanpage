@@ -27,39 +27,16 @@ footer {
     pointer-events: none;
 }
 
-.footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 14px;
-    z-index: 2;
-    position: relative;
-    overflow: hidden;
-}
-
 .container-socialmedias {
     position: relative;
     z-index: 2;
-    margin-top: 341px;
+    margin-top: 345px;
     margin-right: 0px;
 }
 
-.container-contatos {
-    margin-left: 200px;
-}
 
-.container-contatos, .funcionamento {
-    position: relative;
-    z-index: 2;
-    margin-top: 266px;
-    padding: 0px;
-}
 
-.funcionamento {
-    margin-left: 61px;
-}
-
-.container-socialmedias h2, .container-contatos h2, .funcionamento h2 {
+.container-socialmedias h2 {
     margin-bottom: 10px;
     font-size: 1.5rem;
 }
@@ -75,13 +52,7 @@ footer {
     color: var(--black);
 }
 
-.contact-info p {
-    margin: 5px 0;
-}
 
-.opening-hours p {
-    margin: 5px 0;
-}
 
  /* versão mobile */
 
@@ -89,14 +60,12 @@ footer {
     .footer-wave, .footer-content img {
       display: none;
     }
-    .h2, .container-contatos , .funcionamento  {
-      display: none;
-    }
   
     .container-socialmedias  {
       overflow: hidden;
       color: var(--red);
-      margin-top: 20px;
+      margin-top: 0px;
+
     }
     .container-socialmedias i {
       color: var(--black) ; 
@@ -109,10 +78,6 @@ footer {
       .footer-wave, .footer-content img {
           display: none;
         }
-        .h2, .container-contatos , .funcionamento  {
-          display: none;
-        }
-      
         .container-socialmedias  {
           overflow: hidden;
           color: var(--red);
