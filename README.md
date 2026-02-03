@@ -1,48 +1,72 @@
-# Pizzaria Lanpage 🍕
+# Pizzeria Landing Page 🍕
 
-## Descrição
+![HTML5](https://img.shields.io/badge/HTML5-✓-orange)
+![CSS3](https://img.shields.io/badge/CSS3-✓-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![Responsive](https://img.shields.io/badge/Responsive-Design-success)
+![Vercel](https://img.shields.io/badge/Vercel-Deployed-black)
 
-Este é um site fictício de uma pizzaria desenvolvido com HTML, CSS e JavaScript. O objetivo principal é demonstrar o layout de uma página de vendas de pizzas, destacando elementos como animações, botões interativos e uma navegação simples. O projeto não é funcional para pedidos reais e foi desenvolvido como parte de um estudo pessoal.
+## Description
 
-## Tecnologias Utilizadas
+This is a fictional pizzeria website developed using HTML, CSS and JavaScript.
+The main goal of this project is to demonstrate the layout of a pizza sales landing page, highlighting elements such as animations, interactive buttons and simple navigation.
+The project is not functional for real orders and was developed as part of a personal study.
 
-- **HTML5**: Estrutura básica da página.
-- **CSS3**: Estilização visual e animações.
-- **JavaScript**: Interatividade da página.
-- **Vercel**: Hospedagem da aplicação online.
+## Technologies Used
 
-## Funcionalidades
+- **HTML5**: Basic page structure.
 
-- **Página de Apresentação**: Exibe um layout com a marca da pizzaria e animações de fundo.
-- **Menu Interativo**: Mostra uma lista de pizzas (fictícias) com informações sobre preço e descrição.
-- **Botão de Pedido**: Um botão estilizado com animação para indicar a interação do usuário.
-- **Responsividade**: O design se adapta a diferentes tamanhos de tela, oferecendo uma boa experiência tanto em desktop quanto em dispositivos móveis.
-- **Animação de Pizza Giratória**: Uma animação contínua de uma pizza girando no centro da página.
+- **CSS3**: Visual styling and animations.
 
-## Documentação de Cores
+- **JavaScript**: Page interactivity.
 
-- **#FEF9EE**: Branco suave, usado como cor de fundo principal da página.
-- **#000000**: Preto, utilizado para textos e ícones.
-- **#DB992C**: Amarelo, usado para destacar ícones e elementos como o botão de pedido.
-- **#861B15**: Vermelho, a cor principal da marca da pizzaria, usada no logotipo, botão de pedido e destaque de textos.
+- **Vercel**: Online application hosting.
 
-Essas cores foram escolhidas para proporcionar uma aparência acolhedora e profissional, combinando elementos modernos e tradicionais de pizzarias.
+## Features
 
-## Aprendizados
+**Landing Page**: Displays a layout with the pizzeria brand and background animations.
 
-Durante o desenvolvimento deste projeto, aprendi diversas técnicas importantes para o design e a funcionalidade de páginas web, incluindo:
+**Interactive Menu**: Shows a list of (fictional) pizzas with price and description.
 
-- **Animações CSS**: Como aplicar e personalizar animações simples usando `@keyframes` e a propriedade `animation` no CSS.
-- **Responsividade**: A importância de tornar os layouts adaptáveis a diferentes tamanhos de tela, utilizando práticas como o uso de `flexbox` e unidades relativas no CSS.
-- **Interatividade com JavaScript**: Como implementar interações simples com o JavaScript para melhorar a experiência do usuário.
-- **Boas práticas de estruturação**: Como organizar e estruturar um projeto de maneira clara e eficiente, dividindo-o em componentes que facilitam a manutenção e entendimento do código.
+**Order Button**: A stylized button with animation to indicate user interaction.
 
-## Melhorias Futuras
+**Responsive Design**: The layout adapts to different screen sizes, providing a good experience on both desktop and mobile devices.
 
-- Adicionar uma seção para pedidos online.
-- Implementar um sistema de avaliação de pizzas.
-- Otimizar a acessibilidade com mais foco em WAI-ARIA.
+**Rotating Pizza Animation**: A continuous animation of a rotating pizza displayed at the center of the page.
 
-## Créditos
+## Color Documentation
 
-Desenvolvido por **Witalo Dias Santos**. Layout e conceito inspirados em sites modernos de pizzarias.
+**#FEF9EE**: Soft white, used as the main background color.
+
+**#000000**: Black, used for texts and icons.
+
+**#DB992C**: Yellow, used to highlight icons and elements such as the order button.
+
+**#861B15**: Red, the main brand color of the pizzeria, used in the logo, order button and highlighted texts.
+
+These colors were chosen to provide a warm and professional appearance, combining modern and traditional pizzeria design elements.
+
+## Learnings
+
+### During the development of this project, I learned several important techniques related to web design and functionality, including:
+
+**CSS Animations**: How to apply and customize simple animations using @keyframes and the animation property.
+
+**Responsiveness**: The importance of adapting layouts to different screen sizes using practices such as flexbox and relative units.
+
+**JavaScript Interactivity**: How to implement simple interactions with JavaScript to improve user experience.
+
+**Best Practices for Structure**: How to organize and structure a project clearly and efficiently, dividing it into components that make the code easier to maintain and understand.
+
+## Future Improvements
+
+- Add an online ordering section.
+
+- Implement a pizza rating system.
+
+- Improve accessibility with a stronger focus on WAI-ARIA.
+
+## Credits
+
+Developed by Witalo Dias Santos.
+Layout and concept inspired by modern pizzeria websites.
